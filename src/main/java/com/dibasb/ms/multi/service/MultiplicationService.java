@@ -1,5 +1,7 @@
 package com.dibasb.ms.multi.service;
 
+import java.util.List;
+
 import com.dibasb.ms.multi.domain.Multiplication;
 import com.dibasb.ms.multi.domain.MultiplicationResultAttempt;
 
@@ -17,4 +19,6 @@ public interface MultiplicationService {
 	 *         otherwise.
 	 */
 	boolean checkAttempt(final MultiplicationResultAttempt resultAttempt);
+
+	List<MultiplicationResultAttempt> getStatsForUser(String userAlias);
 }
